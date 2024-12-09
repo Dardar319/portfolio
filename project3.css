@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
 html {
     background-color: rgb(241, 170, 182);
 }
 
 h1 {
     text-align: center;
+    color: rgb(136, 72, 136);
     text-shadow: 0 0 6px skyblue,
         0 0 6px skyblue,
         0 0 6px skyblue,
@@ -11,104 +18,117 @@ h1 {
 }
 
 .clock {
-    width: 550px;
-    height: 600px;
-    margin: auto;
-    background-color: rgb(241, 170, 182);
-    ;
+    position: relative;
+    width: 90vw;
+    aspect-ratio: 1/1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 50%;
+    border-style: double;
+    background-color: rgb(156, 109, 156);
 }
 
-.num {
-    position: relative;
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
     font-size: 2em;
     font-family: "Yuji Mai", serif;
     text-shadow: 0 0 8px skyblue,
         0 0 8px skyblue;
     cursor: not-allowed;
-}
 
-.big {
-    color: rgb(147, 6, 6);
-}
-
-.small {
-    color: rgb(155, 155, 7);
 }
 
 .twelve {
-    left: 49%;
-    top: -47%;
+    left: 45%;
+    top: 0%;
 }
 
 .three {
-    left: 90%;
-    top: -23%;
+    left: 93%;
+    top: 43%;
 }
 
 .six {
-    left: 52%;
-    top: 1.5%;
+    left: 50%;
+    top: 87%;
 }
 
 .nine {
-    left: 14%;
-    top: -43%;
+    left: 0%;
+    top: 43%;
 }
 
 .one {
-    left: 65%;
-    top: -60%;
+    left: 72%;
+    top: 10%;
     transform: rotate(30deg);
 }
 
+
 .two {
-    left: 68%;
-    top: -46%;
+    left: 85%;
+    top: 23%;
     transform: rotate(50deg);
 }
 
+
 .four {
-    left: 22%;
-    top: -14%;
+    left: 85%;
+    top: 65%;
     transform: rotate(110deg);
 }
 
+
 .five {
-    left: -15%;
-    top: -25%;
+    left: 70%;
+    top: 80%;
     transform: rotate(145deg);
 }
 
+
 .eleven {
-    left: 24%;
-    bottom: 140%;
+    top: 8%;
+    left: 20%;
     transform: rotate(-30deg);
 }
 
 .ten {
-    left: -4%;
-    bottom: 150%;
+    top: 24%;
+    left: 3%;
     transform: rotate(-55deg);
 }
 
 .eight {
-    left: -48%;
-    bottom: 132%;
+    top: 65%;
+    left: 8%;
     transform: rotate(-115deg);
 }
 
 .seven {
-    left: -54.5%;
-    bottom: 114%;
+    top: 81%;
+    left: 25%;
     transform: rotate(-145deg);
 }
 
+#hour,
+#minute,
+#second {
+    position: absolute;
+    left: 50%;
+}
+
 #hour {
-    position: relative;
-    left: 54.2%;
-    top: 34.9%;
     width: 0.8%;
     height: 15%;
+    top: 35%;
     border-radius: 50%;
     background-color: rgb(22, 22, 189);
     transform-origin: bottom center;
@@ -116,11 +136,9 @@ h1 {
 }
 
 #minute {
-    position: relative;
-    left: 54.2%;
-    top: 15%;
     width: 0.8%;
     height: 20%;
+    top: 30%;
     border-radius: 50%;
     background-color: rgb(191, 191, 18);
     transform-origin: bottom center;
@@ -128,11 +146,9 @@ h1 {
 }
 
 #second {
-    position: relative;
-    left: 54.2%;
-    bottom: 7.99%;
     width: 4px;
     height: 23%;
+    top: 27%;
     border-radius: 50%;
     background-color: rgb(230, 52, 52);
     transform-origin: bottom center;
@@ -140,9 +156,6 @@ h1 {
 }
 
 i {
-    position: relative;
-    top: -760px;
-    left: 51%;
     font-size: 2em;
     color: rgb(184, 11, 11);
 }
