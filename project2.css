@@ -1,0 +1,44 @@
+img{
+    position: absolute;
+    background-size: cover;
+    opacity: 0.5;
+    height: 100vh;
+    width: 97.5vw;
+}
+.container{
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    margin-left: 23%;
+    border-radius: 12px; 
+    overflow: hidden;  
+    color: #03002D;
+}
+.header{
+    display: flex;
+    background-color: gainsboro;
+    border-radius: 12px;
+    justify-content: space-around;
+    padding: 10px;
+}
+#text{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#add{
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gold;
+}
+#lists{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    justify-content: space-around;
+    margin: 10px;
+    color: #03002D;
+}

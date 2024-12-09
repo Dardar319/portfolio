@@ -1,0 +1,60 @@
+body{
+    background-image: url("bcat.jfif");
+    background-size: contain;
+}
+#container{
+    width: 30vw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    background-color: #005347;
+    overflow: hidden;
+}
+input{
+    width: 90%;
+    border: none;
+    background-color: #005347;
+    color: #8EC826;
+    text-align: right;
+    padding: 17px;
+    font-size: 2rem;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 1px;
+    padding: 20px;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: x-large;
+}
+button:hover{
+    background-color: #C9DFA9;
+}
+button:active{
+    background-color: hsl(35, 100%, 85%);
+}
+.sign:hover{
+
+    background-color: #59B692;
+}
+.sign:active{
+    background-color: hsl(35, 100%, 85%);
+}
+.sign{
+    border: none;
+    background-color: wheat;
+    padding: 1px;
+}
+article{
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    color: palevioletred;
+    text-transform: uppercase;
+}

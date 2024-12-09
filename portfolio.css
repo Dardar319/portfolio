@@ -1,0 +1,296 @@
+@media (max-width: 390px) {
+    body {
+        font-size: 7px;
+    }
+
+    header img {
+        width: 30%;
+        height: 40%;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    header img {
+        width: 33%;
+        height: 40%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+
+    header img {
+        width: 33%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 33%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        font-size: 25px;
+    }
+
+    header img {
+        width: 35%;
+        height: 60%;
+    }
+}
+
+:root {
+    --bar: #3B4047;
+    --bar-hov: #6b6e70;
+    --background: #1B1F24;
+    --title: #d0737e;
+    --text: white;
+    --orange: #F1920A;
+    --logo: #B35F67;
+}
+
+body {
+    background-color: #1B1F24;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Geist Mono", monospace;
+    font-size: 1em;
+    background-color: var(--bar);
+    border-bottom: 2px var(--title) solid;
+}
+
+.navigator h2 {
+    position: fixed;
+    top: 0;
+    color: #BFB4D3;
+    text-shadow: 8px -5px 4px #181818;
+    padding-right: 80%;
+    margin-top: 12px;
+    z-index: -1;
+}
+
+nav {
+    padding: 15px;
+}
+
+nav:hover {
+    background-color: var(--bar-hov);
+}
+
+a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+/*Profile*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background);
+    height: 100vh;
+}
+
+b {
+    color: #BFB4D3;
+}
+
+b:hover {
+    zoom: 1.5;
+    text-shadow: 8px 8px 4px #080111;
+    cursor: pointer;
+}
+
+pre {
+    line-height: 1px;
+}
+
+pre h2,
+.paragraph {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    color: var(--orange);
+    font-size: 1em;
+    font-variant: normal;
+}
+
+h4 {
+    color: var(--title);
+    font-size: 1.5em;
+}
+
+header img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*projects*/
+#projects {
+    width: 100%;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.proimg {
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+figcaption {
+    background-color: var(--bar);
+    font-variant: normal;
+    margin-left: 20%;
+    width: 60%;
+    border-radius: 8px;
+}
+
+/*skills*/
+section .icon {
+    font-size: 1rem;
+}
+
+#skills {
+    margin-bottom: 30px;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.cplus {
+    margin-top: 25px;
+}
+
+.point {
+    color: var(--text);
+}
+
+.point:hover {
+    transform: scale(1.5);
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+
+.html {
+    color: #E04E26;
+}
+
+.js {
+    color: #EBCC28;
+}
+
+.css {
+    color: #254BDD;
+}
+
+.java {
+    color: #E06C00;
+}
+
+.sql {
+    color: #B11B1B;
+}
+
+.cplus {
+    color: #6195CB;
+}
+
+/*contact*/
+#contact,
+#skills,
+#projects,
+#about {
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 25px;
+    height: 100vh;
+    text-shadow: 1px -1px 4px black;
+}
+
+footer h2,
+section h3 {
+    font-size: 2em;
+    color: var(--title);
+}
+
+.icon2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.details {
+    font-size: 1.2rem;
+    color: var(--text);
+    transition: transform 0.3s ease-out;
+}
+
+.details:hover {
+    transform: translateY(8px);
+    cursor: pointer;
+}
+
+.fabk {
+    color: #0866FF;
+}
+
+.line {
+    color: #00B900;
+}
+
+.email {
+    color: #E04D3B;
+}
+
+.ph {
+    color: #DDCBBE;
+}
+
+.fabk:hover,
+.line:hover,
+.email:hover,
+.ph:hover {
+    transform: scale(1.5);
+}
+
+hr {
+    color: var(--title);
+    border: none;
+    border-bottom: 2px solid;
+    height: 0;
+    margin-bottom: 50px;
+}
