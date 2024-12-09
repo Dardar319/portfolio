@@ -1,16 +1,23 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-image: url("bcat.jfif");
     background-size: contain;
 }
-#container{
-    width: 30vw;
-    max-width: 500px;
+
+#container {
+    width: 80vw;
     height: auto;
+    max-width: 500px;
+    margin: 0 auto;
     border-radius: 12px;
     background-color: #005347;
     overflow: hidden;
 }
-input{
+
+input {
     width: 90%;
     border: none;
     background-color: #005347;
@@ -19,42 +26,53 @@ input{
     padding: 17px;
     font-size: 2rem;
 }
-#keys{
+
+#keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 10px;
     column-gap: 1px;
-    padding: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
-button{
+
+button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
     font-size: x-large;
 }
-button:hover{
+
+button:hover {
     background-color: #C9DFA9;
 }
-button:active{
+
+button:active {
     background-color: hsl(35, 100%, 85%);
 }
-.sign:hover{
+
+.sign:hover {
 
     background-color: #59B692;
 }
-.sign:active{
+
+.sign:active {
     background-color: hsl(35, 100%, 85%);
 }
-.sign{
+
+.sign {
     border: none;
     background-color: wheat;
     padding: 1px;
 }
-article{
+
+article {
     font-weight: 900;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 10px;
+    text-align: center;
     color: palevioletred;
     text-transform: uppercase;
 }

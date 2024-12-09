@@ -1,4 +1,4 @@
-const addList= document.getElementById("add");
+const addList = document.getElementById("add");
 const text = document.getElementById("text");
 const lists = document.getElementById("lists");
 
@@ -15,6 +15,7 @@ function getToDoList() {
 
     paragraph.style.fontWeight = "bold";
     paragraph.style.textAlign = "left";
+    paragraph.style.marginTop = "18px";
     checking.type = "checkbox";
     checking.style.width = "20px";
     btn.type = "submit";
@@ -33,11 +34,14 @@ function getToDoList() {
     paragraph.innerHTML = text.value;
     text.value = "";
 
-    checking.onclick = function(){
-            paragraph.style.textDecoration = "line-through";
+    checking.onclick = function () {
+        paragraph.style.textDecoration = "line-through";
+    }
+    paragraph.ondblclick = function () {
+        paragraph.style.textDecoration = "none";
     }
 
-    btn.onclick = function(){
+    btn.onclick = function () {
         lists.removeChild(checking);
         lists.removeChild(paragraph);
         lists.removeChild(btn);
