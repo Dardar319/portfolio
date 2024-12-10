@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,65 +8,99 @@
     <link rel="icon" type="image/png" href="repair.png">
 </head>
 <style>
-    body{ 
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    body {
         background-color: rgb(4, 4, 54);
         box-sizing: border-box;
+        width: 100vw;
     }
-    .menu{
-        margin: 0;
-        text-align: end;
+
+    .menu {
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
     }
-    h5{
+
+    h5 {
         display: inline-block;
         color: white;
-        margin: 20px;
+        padding: 10px;
+        font-size: x-small;
     }
-    h5:hover{
-        color: grey;
+
+    h5:hover {
+        background-color: grey;
         cursor: pointer;
     }
-    .left{
-        
+
+    .left {
+        width: 60vw;
         text-align: center;
     }
-    .box{
+
+    img {
+        width: 35%;
+        aspect-ratio: 1/1;
+    }
+
+    .box {
         display: inline-block;
         text-align: center;
         padding: 3px;
     }
-    h1{
+
+    h1 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-style: inherit;
     }
-    .right{
-        
+
+    p {
+        font-size: 0.5rem;
+    }
+
+    .right {
+        width: 40vw;
         text-align: center;
         color: aliceblue;
     }
-    th, td{
+
+    th,
+    td {
         border-radius: 10px;
         background-color: aquamarine;
         text-align: center;
         color: blue;
+        font-size: 1rem;
     }
-    table{
-      
-        padding: 3px;
+
+    table {
+        margin: 0 auto;
+        width: 35vw;
         border-top: 5px solid white;
         border-bottom: 5px solid white;
         border-style: groove;
     }
-    .Container{
-        
+
+    .Container {
+        width: 100vw;
         color: white;
         display: flex;
         margin: 0;
     }
-    .shop{
+
+    .shop {
         margin-top: 20px;
-        
+        width: 99%;
+        object-fit: cover;
     }
 </style>
+
 <body>
     <div class="menu">
         <h5>Home</h5>
@@ -74,82 +109,75 @@
         <h5>Contact</h5>
     </div>
 
-<div class="Container">
-    <div class="left">
-        <h1 style="padding-top: 10px;">If you've broken it, we'll fix it</h1>
-        <h3>If its not listed below, send us a message as chances are we can still fix it for you.</h3>
+    <div class="Container">
+        <div class="left">
+            <h2 style="padding-top: 10px;">If you've broken it, we'll fix it</h2>
+            <h3>If its not listed below, send us a message as chances are we can still fix it for you.</h3>
             <div class="box">
-                <img src="phone.jpg" style="width: 150px;" height="150px">
-                <h3>Phone/Tablet Repairs</h3>
-                <h4>Broken Phone or Table? We've got<br>
+                <img src="phone.jpg">
+                <h4>Phone/Tablet Repairs</h4>
+                <p>Broken Phone or Table? We've got<br>
                     qualified repair technicians who can fix<br>
                     your phone or tablet today
-                </h4>
+                </p>
             </div>
-                
-            <div class="box">
-                <img src="laptop.jpg" style="width: 150px;" height="130px">
-                <h3>Computer/Laptop Repairs</h3>
-                <h4>Broken Laptop or Computer? We've got<br>
-                qualified repair technicians who can fix<br>
-                your phone or tablet today
-                </h4>
-            </div>
-                
-            <div class="box">
-                <img src="game.jpg" style="width: 150px;" height="150px">
-                <h3>Console Repairs</h3>
-                <h4>Broken Playstation or XBox? We've got<br>
-                    qualified repair technicians who can fix<br>
-                    your phone or tablet today
-                </h4>
-            </div>
-    </div>
 
-    <div class="right">
-         <h2>Opening hours</h2>
+            <div class="box">
+                <img src="laptop.jpg">
+                <h4>Computer/Laptop Repairs</h4>
+                <p>Broken Laptop or Computer? We've got<br>
+                    qualified repair technicians who can fix<br>
+                    your phone or tablet today
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="game.jpg">
+                <h4>Console Repairs</h4>
+                <p>Broken Playstation or XBox? We've got<br>
+                    qualified repair technicians who can fix<br>
+                    your phone or tablet today
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <h3>Opening hours</h3>
             <table>
                 <tr>
                     <th>Sun</th>
+                    <td>10:00~15:00</td>
+                </tr>
+                <tr>
                     <th>Mon</th>
+                    <td>8:00~17:00</td>
+                </tr>
+                <tr>
                     <th>Tue</th>
+                    <td>8:00~17:00</td>
+                </tr>
+                <tr>
                     <th>Wed</th>
-                    <th>Thus</th>
+                    <td>8:00~17:00</td>
+                </tr>
+                <tr>
+                    <th>Thu</th>
+                    <td>8:00~17:00</td>
+                </tr>
+                <tr>
                     <th>Fri</th>
+                    <td>8:00~17:00</td>
+                </tr>
+                <tr>
                     <th>Sat</th>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>8:00~17:00</td>
-                    <td>-</td>
+                    <td>10:00~15:00</td>
                 </tr>
             </table>
             <div class="shop">
                 <img src="shop.jpg" style="width: 90%;" height="200px" style="border-radius: 60px;">
             </div>
+        </div>
     </div>
-</div>    
 </body>
+
 </html>
