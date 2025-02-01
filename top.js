@@ -8,9 +8,9 @@ click.onclick = function () {
    calcurry = document.getElementById("calcurry");
    calslide = document.getElementById("calslide");
 
-   calcut.innerHTML = "The amount for cutting is " + numofbamboo.value * 4;
-   calcurry.innerHTML = "The amount for bamboo carrier is " + numofbamboo.value * 3.5;
-   calslide.innerHTML = "The amount for slider is " + numofbamboo.value * 5.75;
+   calcut.innerHTML = "The amount for cutting is " + numofbamboo.value * 4.5;
+   calcurry.innerHTML = "The amount for bamboo carrier is " + numofbamboo.value * 4;
+   calslide.innerHTML = "The amount for slider is " + numofbamboo.value * 7;
 
    calcurry.style.color = "yellow";
 }
@@ -24,7 +24,7 @@ clicktoview.onclick = function () {
    let calthree = document.getElementById("calthree");
 
    let sixValue = numofraw.value * 70;
-   let threeValue = numofraw2.value * 65;
+   let threeValue = numofraw2.value * 70;
    let final = sixValue + threeValue;
 
    calsix.innerHTML = "The .6 amount is " + sixValue;
@@ -42,9 +42,9 @@ cal.onclick = function () {
    let caltotal = document.getElementById("caltotal");
    let calhalf = document.getElementById("calhalf");
 
-   let outValue = numofout.value * 1035;
-   let inValue = numofin.value * 920;
-   let dryValue = numofdry.value * 5750;
+   let outValue = numofout.value * 1000;
+   let inValue = numofin.value * 1000;
+   let dryValue = numofdry.value * 6000;
    let total = outValue + inValue + dryValue;
    let half = total / 2;
 
